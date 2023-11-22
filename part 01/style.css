@@ -1,0 +1,263 @@
+:root {
+  --main-color: #171717;
+  --secondary-color: #ffffff;
+  --tetiary-color: rgb(18, 136, 18);
+  --gray-color: #212121;
+  --secondgray-color: #535353;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  padding: 5px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+.cv {
+  background-color: var(--tetiary-color);
+  border: 1px solid var(--tetiary-color) !important;
+}
+body {
+  background: var(--main-color);
+  color: var(--secondary-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px 50px;
+}
+
+/* header sections */
+
+header {
+  /* width: 100vw; */
+  height: 65px;
+  /* padding: 20px 40px 10px 40px; */
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav > .logo {
+  font-size: 28px;
+  font: bolder;
+  font-weight: 700;
+}
+.nav > .el > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+}
+main {
+  margin-bottom: 200px;
+}
+/* hero section */
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  width: 45%;
+  height: 100%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro h1 {
+  font-size: 50px;
+}
+.intro p {
+  color: var(--secondgray-color);
+  margin-bottom: 20px;
+}
+.image {
+  width: 45%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1e1d1d;
+}
+.image > img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+
+/* About Section */
+.about,
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.about .title,
+.services .title,
+.forms .title {
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.about .para {
+  width: 60%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.about .socails,
+.services .wcards,
+.services .skillcard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.about .socails .card {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 20%;
+  height: 150px;
+}
+
+.about .circ {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .circ > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--tetiary-color);
+}
+.wcards {
+  justify-content: center !important;
+  gap: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.wcards .card {
+  width: 35%;
+  background-color: var(--gray-color);
+  font-size: 30px;
+  padding: 40px;
+  padding-right: 150px;
+}
+.wcards .card > .icon {
+  color: var(--tetiary-color);
+  font-size: 50px;
+}
+.wcards .card:nth-child(1) {
+  border-bottom: 3px solid var(--tetiary-color);
+}
+.wcards .card:hover {
+  border-bottom: 3px solid var(--tetiary-color);
+}
+
+.skillcard {
+  justify-content: center !important;
+  background-color: var(--gray-color);
+  padding: 40px 20px;
+  padding-left: 100px;
+  margin-top: 30px;
+}
+.skillcard > .card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillcard > .card > .per {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--secondgray-color);
+}
+
+.skillcard > .card > .name {
+  text-transform: uppercase;
+  color: var(--tetiary-color);
+}
+.forms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+form {
+  width: 50%;
+  align-self: center;
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+form > input {
+  border: none;
+  background: transparent;
+  width: 48%;
+  height: 40px;
+  border-bottom: 1px solid #c4c4c4;
+  outline: none;
+  font-size: 16px;
+}
+form > textarea {
+  border: none;
+  background: transparent;
+
+  border: 1px solid #c4c4c4;
+  outline: none;
+  font-size: 16px;
+}
+
+form > a {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  padding: 5px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* footer */
+footer {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondgray-color);
+}
